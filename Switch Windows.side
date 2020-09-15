@@ -1,0 +1,55 @@
+{
+  "id": "d1d1cbdf-86b1-45bb-beda-63a8aca224c4",
+  "version": "2.0",
+  "name": "Switch Windows",
+  "url": "https://itmscoaching.herokuapp.com",
+  "tests": [{
+    "id": "d03d5da9-2fbe-4e89-9057-64ab96cbcd53",
+    "name": "lanho123",
+    "commands": [{
+      "id": "5000ade7-c5d4-46cb-86a5-53d12d605711",
+      "comment": "",
+      "command": "open",
+      "target": "/switch-window",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ab0ad09-b2aa-47e9-9de0-286c917df1cc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a2d5c8c6-c7e9-4239-ae57-1c789153cd81",
+      "comment": "",
+      "command": "click",
+      "target": "id=alert-button",
+      "targets": [
+        ["id=alert-button", "id"],
+        ["css=#alert-button", "css:finder"],
+        ["xpath=//button[@id='alert-button']", "xpath:attributes"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Open alert')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a2b1b82-99d4-4e75-aea4-54019474dfd2",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "This is a test alert!",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "30f41fb7-0a0d-4c6c-9808-d2c13e98b36a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d03d5da9-2fbe-4e89-9057-64ab96cbcd53"]
+  }],
+  "urls": ["https://itmscoaching.herokuapp.com/"],
+  "plugins": []
+}
